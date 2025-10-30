@@ -1,0 +1,4 @@
+#This is where we keep all the input file addresses and the format is:
+#filename: file_address
+#You can comment an address and replace it with a new one by adding a '#' in front of the old address line.
+filename: config/input_adds.tsv

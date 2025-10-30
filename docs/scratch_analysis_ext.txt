@@ -1,0 +1,5 @@
+#This file contain more explanation about the scratch analysises. The codes are in ./scripts/analysis/scratch/
+
+sample.py
+The script is to show a sample code snippet for a scratch analysis.
+
