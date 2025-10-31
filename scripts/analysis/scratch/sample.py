@@ -7,7 +7,7 @@ import pandas as pd
 from scripts.IOmanager.add_resolver import get_file_name, get_git_mark, get_time_mark
 from scripts.IOmanager.dt_loader import load_dt
 
-AN = 'sample'
+AN = 'sample_sc' #sample scratch
 GIT = get_git_mark()
 
 config = {

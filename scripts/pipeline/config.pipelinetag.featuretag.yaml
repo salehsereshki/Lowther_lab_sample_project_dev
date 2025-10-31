@@ -1,0 +1,6 @@
+TAG: "pipeline_TAG" # The TAG must contain information about input data
+#pipeline parameters
+INPUT1: "data/input1.csv"
+SAMPLE_ANALYSIS_V: 1
+OUTPUT_DIR: "results/output_directory"
+LOG_LEVEL: "INFO"
