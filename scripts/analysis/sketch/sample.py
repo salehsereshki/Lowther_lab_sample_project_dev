@@ -7,15 +7,15 @@ import pandas as pd
 from scripts.IOmanager.add_resolver import get_file_name, get_git_mark, get_time_mark
 from scripts.IOmanager.dt_loader import load_dt
 
-AN = 'sample_sc' #sample scratch
+AN = 'sample_sc' #sample sketch
 GIT = get_git_mark()
 
 config = {
     'threhold': 0.5,
 }
 
-output_plot = f'./output/plots/{AN}/'
-output_tables = f'./output/tables/{AN}/'
+output_plot = f'./output/plots/analysis/{AN}/'
+output_tables = f'./output/tables/analysis/{AN}/'
 #change the tables output if the analysis generates large tables
 os.makedirs(output_plot, exist_ok=True)
 os.makedirs(output_tables, exist_ok=True)
@@ -37,5 +37,5 @@ sample_dt['new_col'] = sample_dt['existing_col'] * config['threhold']
 
 
 #save results
-sample_dt.to_csv(f'{output_tables}filtered-by-threh_{GIT}_{get_time_mark()}.tsv', sep='\t', index=False)
+sample_dt.to_csv(f'{output_tables}output1_{GIT}_{get_time_mark()}.tsv', sep='\t', index=False)
 

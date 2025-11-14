@@ -1,5 +1,5 @@
-#This file contain more explanation about the scratch analysises. The codes are in ./scripts/analysis/scratch/
+#This file contain more explanation about the sketch analysises. The codes are in ./scripts/analysis/sketch/
 
 sample.py
-The script is to show a sample code snippet for a scratch analysis.
+The script is to show a sample code snippet for a sketch analysis.
 
