@@ -30,7 +30,7 @@ Lowther_lab_sample_project_dev/
 │   │   └── README.md        # Notes on intermediate outputs
 │   └── output/              # Intermediate data outputs, Like tables and project objects
 ├── docs/
-│   └── scratch_analysis_ext.txt  # Notes on sketch analyses
+│   └── sketch_analysis_ext.txt  # Notes on sketch analyses
 ├── output/
 │   └── plots/
 │       └── analysis/
@@ -152,7 +152,7 @@ The current file is a **skeleton** and needs to be completed before use (e.g., d
 
 ### Sketch Analyses
 This is the playground for exploratory data analysis and prototyping. After an analysis is finilized it should be moved to the main analysis directory.
-`scripts/analysis/sketch/sample.py` and `docs/scratch_analysis_ext.txt` show how to keep “scratch” / exploratory analyses separated from the main, reproducible analysis code.
+`scripts/analysis/sketch/sample.py` and `docs/sketch_analysis_ext.txt` show how to keep “scratch” / exploratory analyses separated from the main, reproducible analysis code.
 
 ---
 
