@@ -14,5 +14,5 @@ def load_dt(fn, loader_func):
     return func(add)
 
 
-def sample_input(add):
+def sample_input_reader(add):
     return pd.read_csv(add, sep='\t')

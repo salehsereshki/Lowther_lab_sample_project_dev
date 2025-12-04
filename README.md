@@ -131,7 +131,7 @@ Usage example:
 ```python
 from IOmanager.dt_loader import load_dt
 
-df = load_dt("sample_input", "sample_input") # first is the data file name in input_adds.txt, second is the function name in IOmanager.dt_loader
+df = load_dt("sample_input", "sample_input_reader") # first is the data file name in input_adds.txt, second is the function name in IOmanager.dt_loader
 ```
 
 You can define additional loader functions (e.g., for TSV, parquet, etc.) and call them via `load_dt`.
