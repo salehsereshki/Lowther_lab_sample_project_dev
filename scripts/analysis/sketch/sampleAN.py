@@ -4,7 +4,7 @@
 #loading necessary libraries
 import os
 import pandas as pd
-from scripts.IOmanager.name_resolver import get_file_name, get_git_mark
+from scripts.IOmanager.name_resolver import get_file_path, get_git_mark
 from scripts.IOmanager.dt_loader import load_dt
 import scripts.code_blocks.test_units as tu
 
@@ -22,7 +22,7 @@ os.makedirs(output_plot, exist_ok=True)
 os.makedirs(output_tables, exist_ok=True)
 
 #load data adds
-sample_dt = pd.read_csv(get_file_name('sample_data'), sep='\t')
+sample_dt = pd.read_csv(get_file_path('sample_data'), sep='\t')
 
 #or load the data through the dt_loader
 sample_dt = load_dt('sample_data', 'sample_input_reader')

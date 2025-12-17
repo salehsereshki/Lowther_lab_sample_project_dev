@@ -1,5 +1,5 @@
 
-def get_file_name(fn):
+def get_file_path(fn):
     #read  './config/input_adds.txt', convert the lines without '#' at the start to a list seperate by : and return the value for the key fn
     with open('./config/input_adds.txt', 'r') as f:
         for line in f:
