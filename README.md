@@ -17,47 +17,61 @@ working pipeline. Adapt and extend them for your own projects.
 ## Repository Structure
 
 ```text
-Lowther_lab_sample_project_dev/
-├── .gitignore
-├── README.md                # Project-level documentation (this file)
-├── config/
-│   └── input_adds.txt       # Logical input names → file paths
-├── data/
-│   ├── input/
-│   │   ├── sample_input.csv # Example input data
-│   │   └── file.log         # Example log file
-│   ├── processed/
-│   │   └── README.md        # Notes on intermediate outputs
-│   └── output/              # Intermediate data outputs, Like tables and project objects
-├── docs/
-│   └── sketch_analysis_ext.txt  # Notes on sketch analyses
-├── output/
-│   └── plots/
-│       └── analysis/
-│           └── sample_plt1.png   # Example plot
-└── scripts/
-    ├── IOmanager/
-    │   ├── __init__.py
-    │   ├── add_resolver.py   # Resolve logical file names + git/time stamps
-    │   └── dt_loader.py      # Data loading helpers
-    ├── analysis/
-    │   ├── __init__.py
-    │   └── sample.py         # Example analysis script (skeleton)
-    ├── analysis/sketch/
-    │   ├── __init__.py
-    │   └── sample.py         # Example “sketch” / exploratory script
-    ├── cml_tools/
-    │   └── sample_tool/
-    │       ├── toolname_config.yaml    # Example tool config
-    │       └── toolname_run.sh     # Example external tool runner
-    ├── code_blocks/
-    │   ├── code_archive.py   # Archived reusable code fragments
-    │   └── test_units.py     # Small test units / checks
-    ├── pipeline/
-    │   ├── config.pipelinetag.featuretag.yaml  # Example pipeline config
-    │   └── run_pipelinetag.sh                  # Example pipeline runner
-    └── plotting/
-        └── __init__.py
+Lowther_lab_sample_project_dev/  # Repo root (analysis-focused project template)
+├── config/                                     # Central configuration (single source of truth)
+│   └── input_adds.txt                          # Logical input names → file paths mapping
+├── data/                                       
+│   ├── input/                                  # Inputs that are smaller than 50MB
+│   │   ├── file.log                            # The log file explains where the input files come from also it contains the log of their changes (new versions; v1->v2) 
+│   │   └── sample_input.csv                    
+│   ├── processed/                              # Intermediate outputs produced by analyses; not final reportable results. Mostly to be used in the next steps of anlaysis.
+│   │   ├── analysis/                           
+│   │   │   └── sampleAN/                       
+│   │   │       └── table.tsv                   
+│   │   └── README.md                           # Notes on intermediate outputs
+│   └── temp/                                   # Scratch space for temporary files (safe to clear)
+├── docs/                                       # High-level documentation / notes
+│   └── analysis_description.txt                # Human-readable overview of analyses in plain language
+├── output/                                     # Report-ready outputs (tables/plots) for sharing
+│   ├── plots/                                  
+│   │   ├── analysis/                           
+│   │   │   └── sampleAN_sk/                    
+│   │   │       └── plt1.png                    
+│   │   └── pipeline/                           
+│   │       └── sample_pipeline_plt.png         
+│   └── tables/                                 
+│       ├── analysis/                           
+│       │   └── sampleAN_sk/                    
+│       │       └── table1.tsv                  
+│       └── pipeline/                           
+│           └── table1.tsv                      
+├── scripts/                                    # All code (analysis modules, pipelines, utilities)
+│   ├── analysis/                               # Main analysis scripts (reproducible, parameterized)
+│   │   ├── sketch/                             # sketch analyses (prototype area)
+│   │   │   ├── __init__.py                     
+│   │   │   └── sampleAN.py                     # Example sketch analysis script
+│   │   ├── __init__.py                         
+│   │   └── sample.py                           # Example analysis script (skeleton)
+│   ├── cml_tools/                              # Wrappers/configs for external command-line tools
+│   │   └── sample_tool/                        
+│   │       ├── toolname_config.yaml            
+│   │       └── toolname_run.sh                 
+│   ├── code_blocks/                            # Reusable fragments + small test units
+│   │   ├── code_archive.py                     # Archived reusable code snippets
+│   │   └── test_units.py                       # Small checks / test units
+│   ├── IOmanager/                              # I/O utilities (load data + resolve names)
+│   │   ├── __init__.py                         
+│   │   ├── dt_loader.py                        # Data loading helpers
+│   │   └── name_resolver.py                    # Resolves logical names + stamps (git/time)
+│   ├── pipeline/                               # Pipeline; combining several analyses and cml-tools (orchestration entrypoints)
+│   │   ├── config.pipelinetag.featuretag.yaml  
+│   │   └── run_pipelinetag.sh                  
+│   └── plotting/                               # Reusable plotting helpers
+│       ├── __init__.py                         
+│       └── analysis_sample.py                  
+├── .gitignore                                  # Git ignore rules (outputs/temp/IDE files, etc.)
+└── README.md                                   # Project-level documentation (how to run + conventions)
+
 ```
 
 ---
