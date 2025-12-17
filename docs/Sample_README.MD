@@ -51,15 +51,15 @@ project_root/
 - PRs welcome (include a brief description + test/validation notes)
 
 ## License
-Add your license here (e.g., MIT, Apache-2.0).
+This project is released under the MIT License. See the LICENSE file for details.
 
 ## Citation
 If you use the code in this repository, please cite:
-@software{sereshki_lmap_2025,
-  author  = {Lowther, Lab},
-  title   = {toolname/title},
-  url     = {https://github.com/<ORG>/<REPO>},
-  year    = {2025},
-  version = {<TAG_OR_RELEASE>}
-}
+
+If a paper is published:
+''Lowther C, et al. [Paper title]. [Journal]. [Year]. DOI: [doi]''
+
+If it is not linked to a publication:
+Lowther Lab. [Title]. GitHub repository. Year: 2025.
+
 
