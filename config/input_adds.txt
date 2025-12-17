@@ -3,3 +3,4 @@
 #You can comment an address and replace it with a new one by adding a '#' in front of the old address line.
 gen_list1: /sc/arion/projects/lowtherlab/data/assembly/gencode.v38.annotation.gtf
 labels: ./data/input/labels/labels_all_L1.txt
+sample_data: ./data/inuput/sample.txt
