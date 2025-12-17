@@ -32,7 +32,6 @@ python script.py [required_args] [optional_args]
 - `--out` : Output folder
 - `--config` : Config file (optional)
 
-## Inputs / Outputs
 **Inputs:** brief description + expected formats  
 **Outputs:** where results go + what gets produced (tables/plots/models/logs)
 
