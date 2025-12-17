@@ -46,10 +46,6 @@ project_root/
 ```
 
 
-## Contributing
-- Open an issue for bugs/feature requests
-- PRs welcome (include a brief description + test/validation notes)
-
 ## License
 This project is released under the MIT License. See the LICENSE file for details.
 
