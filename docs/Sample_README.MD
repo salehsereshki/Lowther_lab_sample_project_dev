@@ -52,3 +52,14 @@ project_root/
 
 ## License
 Add your license here (e.g., MIT, Apache-2.0).
+
+## Citation
+If you use the code in this repository, please cite:
+@software{sereshki_lmap_2025,
+  author  = {Lowther, Lab},
+  title   = {toolname/title},
+  url     = {https://github.com/<ORG>/<REPO>},
+  year    = {2025},
+  version = {<TAG_OR_RELEASE>}
+}
+
