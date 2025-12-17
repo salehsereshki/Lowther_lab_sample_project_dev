@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "YOUR_PROJECT_NAME"
+type: software
+authors:
+  - family-names: "LastName"
+    given-names: "FirstName"
+repository-code: "https://github.com/ORG/REPO"
+license: "MIT"
