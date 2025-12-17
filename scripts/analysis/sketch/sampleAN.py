@@ -13,7 +13,6 @@ GIT = get_git_mark()
 
 config = {
     'threhold': 0.5,
-    'labels': f'./data/processed/analysis/{AN}/labels.tsv'
 }
 
 output_plot = f'./output/plots/analysis/{AN}/'
