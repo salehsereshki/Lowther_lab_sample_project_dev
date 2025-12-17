@@ -19,13 +19,10 @@ source .venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
 ```
 
-## Quickstart
-```bash
-python your_entrypoint.py --help
-python your_entrypoint.py --input ./data/example.tsv --out ./output/
-```
-
 ## Usage
+**Module A:**
+Explain what does module A do?
+
 ```bash
 python script.py [required_args] [optional_args]
 ```
@@ -49,10 +46,6 @@ project_root/
 └── docs/        # notes and references
 ```
 
-## Reproducibility
-- Prefer config files for parameters
-- Record software versions (e.g., `pip freeze > requirements.lock.txt`)
-- Save run metadata/logs alongside outputs
 
 ## Contributing
 - Open an issue for bugs/feature requests
