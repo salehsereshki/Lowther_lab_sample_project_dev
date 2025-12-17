@@ -1,0 +1,5 @@
+#This file contain more explanation about the analysis. The codes are in ./scripts/analysis/sketch/ and ./scripts/analysis/
+
+sampleAN.py
+The script is to show a sample code snippet for a sketch analysis.
+

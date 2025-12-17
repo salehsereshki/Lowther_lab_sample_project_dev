@@ -17,7 +17,10 @@ LOG_LEVEL=$(yq '.LOG_LEVEL' "$CONFIG_FILE")
 mkdir -p "$OUTPUT_DIR"
 
 # Python and R scripts
-python ../scripts/analysis/sample.py "$INPUT1" "../data/processed/sample/output_${SAMPLE_ANALYSIS_V}"
+python ../scripts/analysis/sample.py "$INPUT1" "../data/processed/analysis/sampleAN/output_${SAMPLE_ANALYSIS_V}"
+
+#Or write it in the output dir
+#python ../scripts/analysis/sample.py "$INPUT1" "../output/tables/sample/output_${SAMPLE_ANALYSIS_V}"
 
 #run a tool on the output of the previous step
 path/to/tool/tool.sh "../data/processed/sample/output_${SAMPLE_ANALYSIS_V}" "../data/processed/tool_name/output_${TAG}"

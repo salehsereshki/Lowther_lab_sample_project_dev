@@ -1,6 +1,6 @@
-TAG: "pipeline_TAG" # The TAG must contain information about input data
+TAG: "pipeline_TAG" # The TAG must contain information about input data, their version and parameters used in the pipeline. It should be traceable.
 #pipeline parameters
 INPUT1: "data/input1.csv"
-SAMPLE_ANALYSIS_V: 1
+SAMPLE_ANALYSIS_V: 1 # version of sample analysis
 OUTPUT_DIR: "results/output_directory"
 LOG_LEVEL: "INFO"

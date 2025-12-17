@@ -18,5 +18,5 @@ print(AN, sys.argv)
 
 
 
-#write the processed data to data/processed/analysis_sample/
+#write the processed data to data/processed/analysis/
 result.to_csv(f'./data/processed/analysis_{AN}/output_{VN}.tsv', sep='\t', index=False)

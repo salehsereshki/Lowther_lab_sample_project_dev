@@ -1,5 +1,5 @@
 import pandas as pd
-import add_resolver
+import name_resolver
 import sys
 
 
@@ -16,3 +16,6 @@ def load_dt(fn, loader_func):
 
 def sample_input_reader(add):
     return pd.read_csv(add, sep='\t')
+
+def load_a_processed_dt(add):
+    return pd.read_csv(add, sep='\t', names=['col1', 'col2', 'col3'], skiprows=10)

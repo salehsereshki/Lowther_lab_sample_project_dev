@@ -4,15 +4,16 @@
 #loading necessary libraries
 import os
 import pandas as pd
-from scripts.IOmanager.add_resolver import get_file_name, get_git_mark, get_time_mark
+from scripts.IOmanager.name_resolver import get_file_name, get_git_mark, get_time_mark
 from scripts.IOmanager.dt_loader import load_dt
 import scripts.code_blocks.test_units as tu
 
-AN = 'sample_sc' #sample sketch
+AN = 'sampleAN_sk' #sample sketch
 GIT = get_git_mark()
 
 config = {
     'threhold': 0.5,
+    'labels': f'./data/processed/analysis/{AN}/labels.tsv'
 }
 
 output_plot = f'./output/plots/analysis/{AN}/'
@@ -74,7 +75,7 @@ plt.ylabel('Frequency')
 plt.savefig(f'{output_plot}hist_new_col_{GIT}_{get_time_mark()}.png')
 plt.close()
 
-#Or write a function in ./plotting/analysis_sample.py and call it here to generate plots
+#Or write a function in ./plotting/analysis.py and call it here to generate plots
 import scripts.plotting.analysis_sample as asp
 asp.distribution_plot(sample_dt, 'new_col', f'{output_plot}hist_new_col_{GIT}_{get_time_mark()}.png')
 
