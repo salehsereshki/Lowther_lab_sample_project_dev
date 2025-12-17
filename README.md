@@ -112,13 +112,11 @@ Key functions:
 - `get_git_mark()`  
   Returns the first 4 characters of the current git commit hash (or `None` on failure).
 
-- `get_time_mark()`  
-  Returns a simple date–time string of the form `MM-DD-HH-MM`.
 
 These helpers can be used to:
 
 - Resolve input files by a logical name rather than hard-coding paths.
-- Stamp outputs with a git commit and timestamp for reproducibility.
+- Stamp outputs with a git commit for reproducibility.
 
 ### `scripts/IOmanager/dt_loader.py`
 

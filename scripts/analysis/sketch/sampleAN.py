@@ -4,7 +4,7 @@
 #loading necessary libraries
 import os
 import pandas as pd
-from scripts.IOmanager.name_resolver import get_file_name, get_git_mark, get_time_mark
+from scripts.IOmanager.name_resolver import get_file_name, get_git_mark
 from scripts.IOmanager.dt_loader import load_dt
 import scripts.code_blocks.test_units as tu
 
@@ -62,7 +62,7 @@ coefs <- as.data.frame(as.matrix(coef(final_model)))
 ##################################
 
 #save results
-sample_dt.to_csv(f'{output_tables}output1_{GIT}_{get_time_mark()}.tsv', sep='\t', index=False)
+sample_dt.to_csv(f'{output_tables}output1_{GIT}.tsv', sep='\t', index=False)
 
 
 #generate plots
@@ -72,10 +72,10 @@ plt.hist(sample_dt['new_col'], bins=50)
 plt.title('Histogram of new_col')
 plt.xlabel('new_col values')
 plt.ylabel('Frequency')
-plt.savefig(f'{output_plot}hist_new_col_{GIT}_{get_time_mark()}.png')
+plt.savefig(f'{output_plot}hist_new_col_{GIT}.png')
 plt.close()
 
 #Or write a function in ./plotting/analysis.py and call it here to generate plots
 import scripts.plotting.analysis_sample as asp
-asp.distribution_plot(sample_dt, 'new_col', f'{output_plot}hist_new_col_{GIT}_{get_time_mark()}.png')
+asp.distribution_plot(sample_dt, 'new_col', f'{output_plot}hist_new_col_{GIT}.png')
 

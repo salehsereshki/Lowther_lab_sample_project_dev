@@ -21,9 +21,3 @@ def get_git_mark():
     except Exception as e:
         return None
 
-#write a function to get the current date and time
-def get_time_mark():
-    from datetime import datetime
-    now = datetime.now()
-    dt_string = now.strftime("%m-%d-%H-%M")
-    return dt_string
